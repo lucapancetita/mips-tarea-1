@@ -1,3 +1,6 @@
+# Profe mis arichos son #
+
+
 # Tarea de MIPS \#1
 
 Ejercicios de lenguaje ensamblador. Más información en [el blog](https://la35.net/orga/mips-branchs.html). Para probar los programas pueden usar el SPIM.
