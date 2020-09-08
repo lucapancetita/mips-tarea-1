@@ -7,7 +7,8 @@ prompt3: .asciiz "Escriba 5 si quiere ver los multiplos de 5\n"
 prompt4: .asciiz "Escriba 2 si quiere ver los multiplos de ambos\n"
 prompt5: .asciiz "3\n"
 prompt6: .asciiz "5\n"
-
+titulo1: .asciiz "Multiplos de 3 \n"
+titulo2: .asciiz "Multiplos de 5 \n"
 
 .text
   .globl main
@@ -82,6 +83,14 @@ prompt6: .asciiz "5\n"
     syscall
 
     li $v0, 4       # syscall code para imprimir un string
+    la $a0, titulo1  # cargamos la direccion del string
+    syscall
+
+    li $v0, 4       # syscall code para imprimir un string
+    la $a0, espacio  # cargamos la direccion del string
+    syscall
+
+    li $v0, 4       # syscall code para imprimir un string
     la $a0, prompt5  # cargamos la direccion del string
     syscall
 
@@ -89,6 +98,14 @@ prompt6: .asciiz "5\n"
 
 
     hub5:
+    li $v0, 4       # syscall code para imprimir un string
+    la $a0, espacio  # cargamos la direccion del string
+    syscall
+
+    li $v0, 4       # syscall code para imprimir un string
+    la $a0, titulo2  # cargamos la direccion del string
+    syscall
+
     li $v0, 4       # syscall code para imprimir un string
     la $a0, espacio  # cargamos la direccion del string
     syscall
