@@ -1,4 +1,5 @@
-# Profe mis arichos son #
+# Profe mis arichos son 20 fibonacci.asm - factorial.asm - multiplos.asm #
+# No se pq aparecieron esos otros 3 archivos .asm :( #
 
 
 # Tarea de MIPS \#1
